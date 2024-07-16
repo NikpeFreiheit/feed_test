@@ -1,165 +1,123 @@
- {
-            "type": "bundle",
-            "id": "bundle--a6d882c6-ed9f-5d33-b48a-a0fcad77ea6a",
-            "objects": [
-                {
-                    "id": "identity--96a9cd9c-2f73-5ad3-a2ab-c14b3eba65c7",
-                    "spec_version": "2.1",
-                    "identity_class": "organization",
-                    "name": "zaglushka",
-                    "description": "Interactive Online Malware Sandbox",
-                    "contact_information": "zaglushka/",
-                    "created": "2024-07-15T06:45:22.312Z",
-                    "modified": "2024-07-15T06:45:22.312Z",
-                    "x_opencti_id": "79d045dc-c973-42ad-b99b-df1736fed9f9",
-                    "x_opencti_type": "Organization",
-                    "type": "identity"
-                },
-                {
-                    "type": "url",
-                    "id": "url--a654e7ff-d346-54e2-aec9-5e861bc2452a",
-                    "value": "tk254kr6rwr7mjtru/auhj/",
-                    "created": "2024-01-15T05:51:29.900Z",
-                    "modified": "2024-02-01T14:33:19.178Z",
-                    "external_references": [
-                        {
-                            "source_name": "zaglushka task fda9e4d3-72a0-4486-914d-b4db1372458f",
-                            "url": "app.zaglushkafda9e4d3-72a0-4486-914d-b4db1372458f"
-                        }
-                    ],
-                    "labels": [
-                        "Formbook"
-                    ],
-                    "related_objects": [],
-                    "x_opencti_created_by_ref": "identity--96a9cd9c-2f73-5ad3-a2ab-c14b3eba65c7",
-                    "score": 100
-                },
-                {
-                    "type": "file",
-                    "id": "file--fcea0444-4b2f-5e9d-971d-56d7cb622454",
-                    "hashes": {
-                        "SHA-256": "c92e9a6944991445e0d51f30223a9b79a9b76b665e1d79b3d8bec96d677b3000",
-                        "SHA-1": "9936b749bef1b111da6f572913a7d7cd27139d2e",
-                        "MD5": "d942092034cd274c30e41467b1bd665c"
-                    },
-                    "x_opencti_created_by_ref": "identity--96a9cd9c-2f73-5ad3-a2ab-c14b3eba65c7",
-                    "score": 100
-                },
-                {
-                    "type": "url",
-                    "id": "url--f140530f-7686-51dd-95a3-3364b31839e8",
-                    "value": "8.217.168.80/cm",
-                    "created": "2024-01-15T03:10:38.872Z",
-                    "modified": "2024-01-16T11:43:59.433Z",
-                    "external_references": [
-                        {
-                            "source_name": "zaglushka task 35516d1c-25f4-4cfc-96b3-c69d37c1ca78",
-                            "url": "app.zaglushka35516d1c-25f4-4cfc-96b3-c69d37c1ca78"
-                        }
-                    ],
-                    "labels": [
-                        "CobalStrike"
-                    ],
-                    "related_objects": [
-                        {
-                            "relationship_type": "contains",
-                            "source_ref": "url--f140530f-7686-51dd-95a3-3364b31839e8",
-                            "target_ref": "file--fcea0444-4b2f-5e9d-971d-56d7cb622454"
-                        }
-                    ],
-                    "x_opencti_created_by_ref": "identity--96a9cd9c-2f73-5ad3-a2ab-c14b3eba65c7",
-                    "score": 100
-                },
-                {
-                    "type": "port",
-                    "id": "port--49635159-e2d0-5a1c-9b26-a17c42865f08",
-                    "port_value": 12311,
-                    "created": "2024-01-07T13:28:33.846Z",
-                    "modified": "2024-01-10T12:52:09.749Z",
-                    "labels": [
-                        "NjRat"
-                    ],
-                    "related_objects": [
-                        {
-                            "relationship_type": "services",
-                            "source_ref": "domain-name--6ca42f81-571d-5951-8e5c-cbec5a1df59b",
-                            "target_ref": "port--49635159-e2d0-5a1c-9b26-a17c42865f08"
-                        }
-                    ],
-                    "x_opencti_created_by_ref": "identity--96a9cd9c-2f73-5ad3-a2ab-c14b3eba65c7",
-                    "score": 100
-                },
-                {
-                    "type": "file",
-                    "id": "file--bb8e42af-ac48-5076-a3c5-cf6f311930c9",
-                    "hashes": {
-                        "SHA-256": "d179407ccc907b6c47719462f441d8b9a05bb305cbb30774b28c19974ea65e96",
-                        "SHA-1": "865ea9de18493b8849da5270d584e289da73cb4d",
-                        "MD5": "944df39a2ee8ddcf23f5cf7d91623eaa"
-                    },
-                    "x_opencti_created_by_ref": "identity--96a9cd9c-2f73-5ad3-a2ab-c14b3eba65c7",
-                    "score": 100
-                },
-                {
-                    "type": "domain-name",
-                    "id": "domain-name--6ca42f81-571d-5951-8e5c-cbec5a1df59b",
-                    "value": "accommodation-cartoon.at.ply.gg",
-                    "created": "2024-01-07T13:28:33.846Z",
-                    "modified": "2024-01-10T12:52:09.749Z",
-                    "external_references": [
-                        {
-                            "source_name": "zaglushka task 43233f9a-ecaa-4c8d-89d6-6a1f2ec9764f",
-                            "url": "app.zaglushka43233f9a-ecaa-4c8d-89d6-6a1f2ec9764f"
-                        },
-                        {
-                            "source_name": "zaglushka task eb6ae78c-351d-42e8-8a5e-ac95fe79de91",
-                            "url": "app.zaglushkaeb6ae78c-351d-42e8-8a5e-ac95fe79de91"
-                        }
-                    ],
-                    "labels": [
-                        "NjRat"
-                    ],
-                    "related_objects": [
-                        {
-                            "relationship_type": "contains",
-                            "source_ref": "domain-name--6ca42f81-571d-5951-8e5c-cbec5a1df59b",
-                            "target_ref": "file--bb8e42af-ac48-5076-a3c5-cf6f311930c9"
-                        }
-                    ],
-                    "x_opencti_created_by_ref": "identity--96a9cd9c-2f73-5ad3-a2ab-c14b3eba65c7",
-                    "score": 100
-                },
-                {
-                    "type": "port",
-                    "id": "port--2bd7db32-445a-5ab5-a612-d62deddfe5f8",
-                    "port_value": 34926,
-                    "created": "2024-01-09T13:22:21.757Z",
-                    "modified": "2024-01-30T08:01:56.191Z",
-                    "labels": [
-                        "RedLine"
-                    ],
-                    "related_objects": [
-                        {
-                            "relationship_type": "services",
-                            "source_ref": "ipv4-addr--8f44fd64-aaae-501b-9fd5-13389d9f3bb2",
-                            "target_ref": "port--2bd7db32-445a-5ab5-a612-d62deddfe5f8"
-                        }
-                    ],
-                    "x_opencti_created_by_ref": "identity--96a9cd9c-2f73-5ad3-a2ab-c14b3eba65c7",
-                    "score": 100
-                },
-                {
-                    "type": "ipv4-addr",
-                    "id": "ipv4-addr--8f44fd64-aaae-501b-9fd5-13389d9f3bb2",
-                    "value": "195.20.16.168",
-                    "created": "2024-01-09T13:22:21.757Z",
-                    "modified": "2024-01-30T08:01:56.191Z",
-                    "labels": [
-                        "RedLine"
-                    ],
-                    "related_objects": [],
-                    "x_opencti_created_by_ref": "identity--96a9cd9c-2f73-5ad3-a2ab-c14b3eba65c7",
-                    "score": 100
-                }
-            ]
-        }
+{
+  "Event": {
+    "info": "zaglushka event",
+    "attribute_count": 9,
+    "object_count": 4,
+    "attribute": [
+      {
+        "type": "url",
+        "value": "tk254kr6rwr7mjtru/auhj/",
+        "category": "External analysis",
+        "to_ids": false
+      },
+      {
+        "type": "file",
+        "md5": "d942092034cd274c30e41467b1bd665c",
+        "sha1": "9936b749bef1b111da6f572913a7d7cd27139d2e",
+        "sha256": "c92e9a6944991445e0d51f30223a9b79a9b76b665e1d79b3d8bec96d677b3000",
+        "category": "Payload delivery",
+        "to_ids": false
+      },
+      {
+        "type": "url",
+        "value": "8.217.168.80/cm",
+        "category": "Network activity",
+        "to_ids": false
+      },
+      {
+        "type": "domain",
+        "value": "accommodation-cartoon.at.ply.gg",
+        "category": "Network activity",
+        "to_ids": false
+      },
+      {
+        "type": "ip-src",
+        "value": "195.20.16.168",
+        "category": "Network activity",
+        "to_ids": false
+      },
+      {
+        "type": "port",
+        "value": "12311",
+        "category": "Network activity",
+        "to_ids": false
+      },
+      {
+        "type": "file",
+        "md5": "944df39a2ee8ddcf23f5cf7d91623eaa",
+        "sha1": "865ea9de18493b8849da5270d584e289da73cb4d",
+        "sha256": "d179407ccc907b6c47719462f441d8b9a05bb305cbb30774b28c19974ea65e96",
+        "category": "Payload delivery",
+        "to_ids": false
+      },
+      {
+        "type": "port",
+        "value": "34926",
+        "category": "Network activity",
+        "to_ids": false
+      }
+    ],
+    "object": [
+      {
+        "id": "url--a654e7ff-d346-54e2-aec9-5e861bc2452a",
+        "category": "External analysis",
+        "name": "url",
+        "description": "Interactive Online Malware Sandbox",
+        "comment": "zaglushka",
+        "to_ids": false,
+        "meta-category": "Network activity",
+        "tags": ["Formbook"],
+        "external_link": "app.zaglushkafda9e4d3-72a0-4486-914d-b4db1372458f"
+      },
+      {
+        "id": "url--f140530f-7686-51dd-95a3-3364b31839e8",
+        "category": "Network activity",
+        "name": "url",
+        "description": "Interactive Online Malware Sandbox",
+        "comment": "zaglushka",
+        "to_ids": false,
+        "meta-category": "Network activity",
+        "tags": ["CobalStrike"],
+        "external_link": "app.zaglushka35516d1c-25f4-4cfc-96b3-c69d37c1ca78",
+        "related": [
+          {
+            "id": "file--fcea0444-4b2f-5e9d-971d-56d7cb622454",
+            "type": "file",
+            "role": "contains"
+          }
+        ]
+      },
+      {
+        "id": "domain--6ca42f81-571d-5951-8e5c-cbec5a1df59b",
+        "category": "Network activity",
+        "name": "domain",
+        "description": "Interactive Online Malware Sandbox",
+        "comment": "zaglushka",
+        "to_ids": false,
+        "meta-category": "Network activity",
+        "tags": ["NjRat"],
+        "external_link": [
+          "app.zaglushka43233f9a-ecaa-4c8d-89d6-6a1f2ec9764f",
+          "app.zaglushkaeb6ae78c-351d-42e8-8a5e-ac95fe79de91"
+        ],
+        "related": [
+          {
+            "id": "file--bb8e42af-ac48-5076-a3c5-cf6f311930c9",
+            "type": "file",
+            "role": "contains"
+          }
+        ]
+      },
+      {
+        "id": "ipv4--8f44fd64-aaae-501b-9fd5-13389d9f3bb2",
+        "category": "Network activity",
+        "name": "ip-src",
+        "description": "Interactive Online Malware Sandbox",
+        "comment": "zaglushka",
+        "to_ids": false,
+        "meta-category": "Network activity",
+        "tags": ["RedLine"]
+      }
+    ]
+  }
+}
